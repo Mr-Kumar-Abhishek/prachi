@@ -26,4 +26,3 @@ var listener = app.listen(process.env.PORT, function() {
 var prachi = new irc.Client('irc.undernet.org', 'prachi', {
     channels: ['#anx-programming'],
 });
-prachi.connect();
