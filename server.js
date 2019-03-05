@@ -2,9 +2,19 @@
 // where the node app starts
 
 // init project
+var http = require('http');
+var debug = require('debug')('test');
 var express = require('express');
 var irc = require('irc');
 var app = express();
+
+/**
+ * Get port from environment and store in Express.
+ */
+
+var port = normalizePort(process.env.PORT || '3002');
+app.set('port', port);
+
 
 // we've started you off with Express, 
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
