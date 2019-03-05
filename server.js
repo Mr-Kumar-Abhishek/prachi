@@ -3,6 +3,7 @@
 
 // init project
 var express = require('express');
+var irc = require('irc');
 var app = express();
 
 // we've started you off with Express, 
@@ -20,3 +21,9 @@ app.get('/', function(request, response) {
 var listener = app.listen(process.env.PORT, function() {
   console.log('Prachi is listening on port ' + listener.address().port);
 });
+
+var config = {
+  
+  channels: ["botforge", "anx-programming"],
+  server: "denver.us.ix.undernet.org",
+  botName: "prachi"
