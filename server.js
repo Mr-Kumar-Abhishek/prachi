@@ -22,14 +22,8 @@ var listener = app.listen(process.env.PORT, function() {
   console.log('Prachi is listening on port ' + listener.address().port);
 });
 
-var config = {
-  
-  channels: ["botforge", "anx-programming"],
-  server: "denver.us.ix.undernet.org",
-  botName: "prachi"
-  
-};
 
-var prachi = new irc.Client("denver.us.ix.undernet.org", config.botName, { channels: config.channels });
-
-
+var client = new irc.Client('irc.', 'myNick', {
+    channels: ['#channel'],
+});
+prachi.connect();
