@@ -6,6 +6,7 @@ var http = require('http');
 var debug = require('debug')('test');
 var express = require('express');
 var irc = require('irc');
+var normalizePort = require( 'normalize-port' );
 var app = express();
 
 /**
@@ -23,7 +24,7 @@ app.set('port', port);
 app.use(express.static('public'));
 
 // listen for requests :)
-var listener = app.listen(process.env.PORT, function() {
+var listener = app.listen(port, function() {
   console.log('Prachi is listening on port ' + listener.address().port);
 });
 
