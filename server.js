@@ -23,7 +23,7 @@ var listener = app.listen(process.env.PORT, function() {
 });
 
 
-var client = new irc.Client('irc.', 'myNick', {
-    channels: ['#channel'],
+var prachi = new irc.Client('irc.undernet.org', 'prachi', {
+    channels: ['#anx-programming'],
 });
 prachi.connect();
