@@ -40,3 +40,8 @@ var prachi = new irc.Client('irc.undernet.org', 'prachi', {
     channels: ['#anx-programming'],
     autoRejoin: true
 });
+
+prachi.addListener("join", function(channel, who) {
+	// Welcome them in!
+	prachi.say(channel, who + "welcome back");
+});
