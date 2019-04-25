@@ -37,7 +37,7 @@ app.get('/', function(request, response) {
 var prachi = new irc.Client('irc.undernet.org', 'prachi', {
     userName: 'prachi',
     realName: 'prachi kumar',
-    channels: ['#anx-programming'],
+    channels: ['#anx-programming', '#deaf'],
     autoRejoin: true,
     autoConnect: true
 });
