@@ -1,6 +1,5 @@
 
 // init project
-var debug = require('debug')('test');
 var irc = require('irc');
 
 
