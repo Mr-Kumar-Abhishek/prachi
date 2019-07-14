@@ -1,6 +1,7 @@
 
 // init project
 var irc = require('irc');
+const AInterpreter = require('aimlinterpreter');
 
 
 
